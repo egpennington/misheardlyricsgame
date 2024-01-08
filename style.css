@@ -8,7 +8,7 @@ body {
     z-index: -2;
 }
 
-#game-container {
+.game-container {
     position: relative;
     z-index: 1; /* Ensure the game container is on top */
     max-width: 600px;
@@ -20,38 +20,28 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for better visibility */
 }
 
-#play-random-btn {
+.play-random-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #3498db;
+    box-shadow: 2px 2px 2px #333;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-#play-random-btn:hover {
+.play-random-btn:hover {
     background-color: #2980b9;
 }
 
-/* #game-container {
-    max-width: 600px;
-    height: 60vh;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    z-index: 1;
-    background: #fff;
-    opacity: 0.75;
-} */
-
-#result-container {
+.result-container {
     margin-top: 20px;
 }
 
@@ -59,7 +49,7 @@ body {
     padding: 10px;
 }
 
-#spotify-iframe {
+.spotify-iframe {
     border-radius: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -77,6 +67,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     background-color: #3498db;
+    box-shadow: 2px 2px 2px #333;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
