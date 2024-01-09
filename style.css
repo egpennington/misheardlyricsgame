@@ -76,3 +76,58 @@ body {
  .btn:hover {
     background-color: #2980b9;
  }
+
+ .about-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 95%;
+    width: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+.about-modal h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-inner {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-inner li {
+    padding: 8px 0;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.about-modal p {
+    margin-top: 20px;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.about-close {
+    color: #FFCC68;
+}
+
+.about-close:hover {
+    font-size: 2.1rem;
+    opacity: 0.75;
+}
+
+.about {
+    text-decoration: none;
+    color: #fff;
+}

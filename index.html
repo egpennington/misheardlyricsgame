@@ -7,6 +7,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, music, misheard lyrics">
     <meta name="author" content="pennington programming">
     <title>Misheard Lyrics Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,6 +15,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="https://missionsixzero.com/challenge/" target="_blank">
+            <img src="/images/Mis.png" alt="misheard lyrics game Logo" class="nav-logo">    
+            <a href="#" id="about-el" class="about">About</a>
+        </a>
+    </nav>
+
+    <div class="about-modal" id="about-modal-el">
+        <i class="fa-regular fa-rectangle-xmark fa-xl about-close" id="about-close-el"></i>
+        <h2>Turn misheard lyrics into a hilarious jam session with friends</h2>
+        <h3>where laughter meets music in the ultimate party game experience!</h3>
+        <ul class="modal-inner">
+            <li>Choose a song and enjoy a 15-second preview.</li>
+            <li>Listen closely, jot down, or type the lyrics you hear.</li>
+            <li>Unleash your inner star by singing your lyrics over a personalized backing track.</li>
+        </ul>
+        <p>Turn any moment into a stage with your very own backing band. Let your voice shine and create laughter and fun with your friends!</p>
+               
+    </div>
+
     <button id="play-random-btn" class="play-random-btn" onclick="playRandomSong()">Play Random Song</button>
 
     <div id="game-container" class="game-container">
@@ -33,9 +54,6 @@
 
         <div id="result-container" class="result-container"></div>
     </div>
-    <footer>
-        <img src="/images/Mis.png" alt="title of app, misheard lyrics">
-    </footer>
     
 
 <script src="main.js"></script>
